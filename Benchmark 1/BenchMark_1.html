@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BenchMark_1</title>
+        
+        <style>
+            /*11) Give a maximum width to the body and center it in the page*/
+            body{
+                background-color: rgb(194, 177, 177);
+                color: rgb(38, 2, 59);
+                font-family:Arial, Helvetica, sans-serif;
+                max-width: 80%;
+                margin: 0 auto;
+                }
+
+            /*12) Set every h1 to be centered*/    
+            h1{
+                text-align:center;
+            }
+          /* 13) Change the color of each link in the page*/
+            a{
+                color: green;
+            }
+            a:hover{color: red;}
+            /*14) Create a class with a border*/
+            /*15) Set table to have rounded borders*/
+            .border {
+                border: 2px solid black;
+                border-radius: 5px;;
+                
+            }
+          /*19) Add a green border to each td*/
+            table td{
+                border: 1px solid green;
+            }
+
+         
+        /* 16) Add margin between every paragraph*/
+            p{
+                margin:10px;
+            }
+        /*17) Create a class which change font size and boldness*/
+            .font{
+                font-size:"30px";
+                font-weight: bold;
+            }
+            /* 18) Create a class to hide a content*/
+            .hideContent {display:none;}
+
+            #footer{
+                border:1px solid black;
+                border-radius:5px;
+                text-align:center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- 2) Create a heading -->
+        <h1> My BenchMark</h1>
+        <div class="border">
+            
+        <!--  3) Create an ordered list -->
+        <p> Our Moduls:</p>
+        <ol id="myOl">
+            <li>Module One</li>
+            <li>Module Two</li>
+            <li>Module Three</li>
+            <li>Module Four</li>
+            <li>Module Five</li>
+            <li>Module Six</li>
+            <li>Module Seven</li>
+            <li>Module Eight</li>
+
+        </ol>
+
+        <p class="font"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus earum consequuntur veritatis ducimus? Illum placeat in illo ex autem eligendi quasi ut maiores cupiditate. Id nihil repellat quidem architecto quaerat.</p>
+        <h3>Hide Content:</h3>
+        <p>here is a hidden content</p>
+
+        <p class="hideContent">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit odio doloremque officiis expedita totam reiciendis sit sed commodi, tenetur magnam impedit quos fugit quaerat consectetur velit, necessitatibus porro ab quibusdam!
+        </p>
+
+        <a href="#"> This is a Link</a>
+
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem, quisquam? Officiis rerum porro asperiores, aperiam quo error aspernatur sequi quasi ipsa similique facere magnam deserunt ducimus provident delectus ex sunt.</p>
+    </div>
+    <div>
+          
+            
+            <br>
+        <ul id="ul">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+         </ul>
+         
+         
+
+        </div>
+
+       <!-- 4) Create a table with 5 columns and 4 rows-->
+       <!-- 5) Add an image for each second cell of the first row-->
+       <!-- 7) Add a link for every image-->
+        <div> 
+         <table class="border">
+             <tr>
+                <td>Title</td>
+                 <td><a href="#"><img src="../img/Author.png"></a></td>
+                 <td>ISBN</td>
+                 <td><a href="#"> <img src="../img/year.png"></a></td>
+                 <td>Something Else</td>
+             </tr>
+
+             <tr>  
+                <td>Kitte Runner</td>
+                <td> Khaled Hossein</td>
+                <td>1111</td>
+                <td>2008</td>
+                <td>Else</td>
+              </tr>
+
+              <tr>
+                <td>Poor Dad Rich Dad</td>
+                <td>Robert Kiyosaki</td>
+                <td>222</td>
+                <td>2009</td>
+                <td>Else 2</td>
+              </tr>
+
+              <tr>
+              <td>Elon Musk</td>
+                <td>Ashlee Vance</td>
+                <td>333</td>
+                <td>2010</td>
+                <td>Else 3</td>
+              </tr>
+              <!-- 6) Merge together 2 table cells-->
+              <tr>
+                <td>Start with Why</td>
+                <td>Simon Sinek</td>
+                <td>333</td>
+                <td colspan="2">Nothing Else</td>
+                
+              </tr>
+         </table>
+        </div>
+         <!-- 8) Divide the page using a horizontal line-->
+         <br>
+         <hr>
+         <!-- 9) Create a container with a nested paragraph and a nested unordered list-->
+         <div id="container">
+             <p> This is a container with nested paragraphs and nested unordered lists</p>
+             <ul>
+                <li>Progrming Languages:</li>
+                <li> Web:
+                  <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </li>
+                <li>Android</li>
+              </ul>
+
+            
+
+
+         </div>
+        <!--10) Create a footer with some information about the page creator-->
+         <footer id="footer">
+             <p>  © Alina Spahiu</p>
+             <p>Phone Number: 00355698777542
+             </p>
+             <p>email: alina.s.abbaz@gmail.com</p>
+         </footer>
+
+
+
+         <script>
+
+//JAVASCRIPT:
+
+ // 21) Given variable X = "John" and Y = "Doe", write on the console log "John <> Doe"
+  let X="John";
+  let Y="Doe";
+  console.log(X+" "+Y);
+
+//22) Create an object with properties such Name, Surname, Email
+   let myObject={
+       name: "Alina",
+       surname: "Spahiu",
+       email: "alina.s.abbaz@gmail.com"
+       }
+    console.log(myObject)
+
+//23) Delete Email from the previously created object
+     delete myObject.email;
+    console.log(myObject);
+
+//24) Create an array with 10 strings in it
+let array=["String 1", "String 2", "String 3", "String 4", "String 5", "String 6", "String 7", "String 8", "String 9", "String 10"];
+
+//25) Print in the console every string in the previous array
+console.log(array)
+
+//26) Create an array with 100 random numbers in it
+var makeARandomNumber = function(){
+    return Math.floor(Math.random() * 200);
+}
+var randoms = Array(100).fill(0).map(makeARandomNumber);
+console.log(randoms)
+
+//27) Wrote a function to get the MAX and the MIN from the previously created array
+
+console.log("The maxmimum number is: ", Math.max(...randoms))
+console.log("The minimum number is: ", Math.min(...randoms))
+
+//28) Create an array of arrays, in which every array has 10 random numbers
+// let arrayOfArrays=[[let arr1(10).fill(0).map(makeARandomNumber)]];
+// console.log(arrayOfArrays)
+
+//29) Create a function that gets 2 arrays and returns the longest one
+
+var arr1 = [2, 4, 6, 8, 10];
+   let arr2 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+function longestArray (){
+   
+
+   if(arr1.length > arr2.lenth){
+       return arr1;
+   }
+   else { return "arr2 which contains: " + arr2 + ".";}
+
+}
+console.log("The longest array is ", longestArray());
+
+//30) Create a function that gets 2 arrays of numbers and returns the one with the higher sum of values
+
+    sumOfArray = function (arr){
+    return arr.reduce(function(a,b){ return a+b}, 0 );
+    }
+
+function longestArrayEx30(){
+    if(sumOfArray(arr1) > sumOfArray(arr2)){
+        return arr1;
+    }
+    else { return "higher sum of array: " + arr2 + ".";}
+}
+console.log(longestArrayEx30())
+
+
+
+// DOM
+
+
+//31) Get element with ID "container" from the page
+console.log(document.getElementById('container'));
+
+//32) Get every "td" from the page
+console.log(document.getElementsByTagName('td'))
+
+//33) Create a cycle that prints the text inside every td of the page
+ //console.log(document.getElementsByTagName('td').value)
+
+ //34) Write a function to change the heading of the page
+ function changeHeading(newHeading){
+     document.querySelector('h1').innerText="My First BenchMark - Day 9"
+ }
+ changeHeading();
+
+ //35) Write a function to add an extra row to the table
+//  function addRow(){
+//      let newRow = document.getElementById('addRowbtn');
+//      console.log(addRow);
+//      let rowNode = document.getElementById('myTable');
+
+//      textRow = document.createTextRow(newRow.value)
+
+    // 40) Write a function to empty a list
+
+      function removeElement() {
+   
+      var element = document.getElementsByClassName('border');
+      element.parentNode.removeChild('tr ');
+       }
+      removeElement()
+
+         </script>
+    </body>
+</html>
